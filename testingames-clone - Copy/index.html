@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "GameArea",
+          "url": "https://yourwebsite.com",
+          "description": "Discover and play the best online games with GameArea. Explore new, hot, best, and exclusive games for an amazing gaming experience.",
+          "keywords": "online games, new games, best games, game preview, exclusive games, video games, nfl games, nba games, cool math games, mlb games, crazy games, olympic games",
+          "author": {
+            "@type": "Organization",
+            "name": "GameArea"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "GameArea",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://play-lh.googleusercontent.com/-8iIrszadl0YIA0F93KErQfqo1a-HV9rXqViCfQZMyhtzjq5neT3DJatlskYo2W_-A=w240-h480-rw"
+            }
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://yourwebsite.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover and play the best online games with GameArea. Explore new, hot, best, and exclusive games for an amazing gaming experience.">
+    <meta name="keywords" content="online games, new games, best games, game preview, exclusive games, video games, nfl games, nba games, cool math games, mlb games, crazy games, olympic games">
+    <meta name="author" content="GameArea">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GameArea: Online Games Site">
+    <meta property="og:description" content="Best online games and game previews. New and popular games, game cards and exclusive games.">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:image" content="https://preview.redd.it/lxi5qhpu8tc91.png?auto=webp&s=381af1aeb9fe43556fe461e7ae854e33e9497f41">
+    <title>GameArea: Online Games Site</title>
+    <link rel="icon" href="game-svgrepo-com.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="/">
+                <span class="brand-text">
+                    <!-- SVG Icon -->
+                    <svg width="20px" height="20px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M905.77 793.161H99.172c-35.017 0-63.4 28.383-63.4 63.396v4.884c0 35.015 28.383 63.397 63.4 63.397H905.77c35.014 0 63.391-28.383 63.391-63.397v-4.884c-0.001-35.013-28.378-63.396-63.391-63.396z" fill="#6277BA" /><path d="M786.812 373.441l-3.61-2.742c-27.948-21.226-67.743-15.777-88.9 12.172L415.283 751.612c-21.145 27.948-15.639 67.808 12.304 89.032l3.61 2.742c27.943 21.237 67.744 15.776 88.891-12.178l279.028-368.725c21.146-27.953 15.639-67.822-12.304-89.042z" fill="#F0D043" /><path d="M970.852 329.401c0 87.741-71.131 158.878-158.879 158.878-87.741 0-158.878-71.137-158.878-158.878 0-87.747 71.137-158.878 158.878-158.878 87.748 0 158.879 71.131 158.879 158.878z" fill="#E5594F" /></svg>
+                    Game<span class="highlight">Area</span>
+                </span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-item" data-category="new">New</a>
+            <a href="#" class="nav-item" data-category="hot">Hot</a>
+            <a href="#" class="nav-item" data-category="best">Best</a>
+            <a href="#" class="nav-item" data-category="exclusive">Exclusive</a>
+            <button id="themeToggle" class="theme-button">🌙</button>
+        </div>
+    </nav>
+
+    <div id="game-cards-container" class="game-cards-container">
+        <!-- Game cards will be rendered here -->
+    </div>
+    
+    <div class="game-frame-wrapper" id="gameFrameWrapper" style="display: none;">
+        <button id="closeGame" class="close-button">✖</button>
+        <button id="fullscreenToggle" class="fullscreen-button">⛶</button>
+        <iframe id="gameFrame" src="" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

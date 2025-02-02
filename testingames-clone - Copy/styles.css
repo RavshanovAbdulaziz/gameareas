@@ -1,0 +1,167 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-item:hover {
+    background-color: #444;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.game-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Karta orasidagi bo‘shliq */
+}
+
+.game-card {
+    background-color: #f0f0f0;
+    margin: 10px;
+    width: calc(100% / 6 - 20px);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.game-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Initially hide the game name */
+.game-card .game-name {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    opacity: 0; /* Hide the text */
+    transition: opacity 0.3s ease;
+}
+
+/* Show the game name on hover */
+.game-card:hover .game-name {
+    opacity: 1; /* Show the text when hovering */
+}
+
+/* Fullscreen iframe */
+.game-frame-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.game-frame-wrapper iframe {
+    width: 80%;
+    height: 80%;
+    border: none;
+}
+
+.close-button, .fullscreen-button {
+    position: absolute;
+    top: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;
+}
+
+.close-button {
+    right: 10px;
+}
+
+.fullscreen-button {
+    right: 50px;
+}
+
+.close-button:hover, .fullscreen-button:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+
+
+
+/* Asosiy holat (kunduzgi rejim) */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Tungi rejim */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Tugma stili */
+.theme-button {
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    background: #ddd;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+.theme-button:hover {
+    background: #bbb;
+}
+
+/* Tungi rejim tugmachasi rangi */
+.dark-mode .theme-button {
+    background: #444;
+    color: #fff;
+}
+
+.dark-mode .theme-button:hover {
+    background: #666;
+}
+
+.nav-brand .brand-text i {
+    margin-right: 8px; /* Adjust space between icon and text */
+}
